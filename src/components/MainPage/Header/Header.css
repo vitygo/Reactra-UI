@@ -1,0 +1,16 @@
+
+
+.header{
+    width: 100%;
+    height: 90px;
+}
+
+.navbar__logo{
+    height: 100%;
+    width: auto;
+}
+
+.logo__img{
+    height: 90px;
+    width: auto;
+}
