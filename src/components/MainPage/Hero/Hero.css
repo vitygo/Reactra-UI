@@ -21,11 +21,14 @@
 }
 
 .hero-text__hero-title{
+    position: relative;
     text-align: center;
     font-size: 2.6rem;
     margin-top: 7%;
 
 }
+
+
 
 .hero-text__hero-title span{
     background: linear-gradient(to left, #f3f3f3 35%, #1fe1c6 65%, #1daef4 85%);
@@ -128,7 +131,12 @@
         margin-top: 5%;
         font-size: 1.6rem;
     
-    }
+ 
+    
+
+    
+    
+
 }
 
 @media (min-width: 1025px){
