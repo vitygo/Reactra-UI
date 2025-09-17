@@ -1,9 +1,18 @@
+:root{
+  --black-bg: black;
+  
+  --main-font-color: rgba(255, 255, 255, 0.827);
+}
+
+
 *{
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
 
 body{
   /* overflow-x: hidden; */
