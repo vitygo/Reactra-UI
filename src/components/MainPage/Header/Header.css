@@ -31,6 +31,7 @@
 }
 
 .navbar__dropdown-menu {
+    z-index: 200;
     display: flex;
     justify-content: flex-end ;
     position: fixed;
