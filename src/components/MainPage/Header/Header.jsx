@@ -17,8 +17,13 @@ export default function Header(){
                 <GiHamburgerMenu onClick={() => setIsOpen(prev => !prev)} color="white" size='20%' />
                 </div>
                 <div className={`navbar__dropdown-menu ${isOpen ? 'open' : ''}`}>
-
-            </div>
+                    <ul className='dropdown-menu__link-list'>
+                        <li className='link-list__link'>Documentation</li>
+                        <li className='link-list__link'>Components</li>
+                        <li className='link-list__link'>Templates</li>
+                        <li className='link-list__link'>GitHub</li>
+                    </ul>
+                </div>
             
         </header>
     )
