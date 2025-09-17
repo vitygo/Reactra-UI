@@ -5,12 +5,12 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     color: var(--main-font-color);
-    background: linear-gradient(90deg, #000 0%, #9060ef 35%, #1fe1c6 65%, #1daef4 85%, #000 100%);
-    background: radial-gradient(circle at top right, #1daef4 -10%, #1fe1c6 10%, #9060ef 40%, #000 54%);
-   
+    background: radial-gradient(circle at bottom right, #1daef4 -10%, #1fe1c6 10%, #9060ef 40%, #000 74%);
+    
     padding: 10%;
+    padding-top: 30%;
    
 }
 
@@ -28,7 +28,7 @@
 }
 
 .hero-text__hero-title span{
-    background: linear-gradient(to left, #9060ef 35%, #1fe1c6 65%, #1daef4 85%);
+    background: linear-gradient(to left, #f3f3f3 35%, #1fe1c6 65%, #1daef4 85%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -58,9 +58,13 @@
 
 @media (min-width: 768px){
     .hero-text__hero-title{
-        font-size: 3rem;
+        font-size: 3.5rem;
+        max-width: 60%;
     
     
+    }
+    .hero-text__hero-text{
+        max-width: 50%;
     }
 }
 
@@ -73,22 +77,24 @@
         min-height: 40vh;
         padding-left: 10%;
         padding-right: 10%;
+        padding-top: 0;
     }
     .hero-section__hero-text{
-        align-items: flex-start;
+        align-items: center;
 
     }
     .hero-text__hero-title{
-        font-size: 3.3rem;
-        text-align: left;
+        font-size: 4rem;
+        text-align: center;
         margin: 0;
         max-width: 84%;
    
     }
     .hero-text__hero-text{
-        text-align: left;
+        text-align: center;
         margin-top: 3%;
         max-width: 65%;
+        font-size: 1.1rem;
     }
     .hero-section__hero-img{
         display: flex;
@@ -103,20 +109,20 @@
 
 @media (min-width: 1025px){
     .hero-section__hero-text{
-        align-items: flex-start;
+        align-items: center;
 
     }
     .hero-text__hero-title{
-        font-size: 5rem;
-        text-align: left;
+        font-size: 5.5rem;
+        text-align: center;
         margin: 0;
-        max-width: 84%;
+        max-width: 60%;
    
     }
     .hero-text__hero-text{
-        text-align: left;
+        text-align: center;
         margin-top: 3%;
-        max-width: 65%;
+        max-width: 40%;
     }
     .hero-section{
         flex-direction: row;
@@ -137,5 +143,15 @@
         width: 30vw;
         height: auto;
     
+    }
+}
+
+@media (min-width: 1700px){
+    .hero-text__hero-title{
+        font-size: 7rem;
+        text-align: center;
+        margin: 0;
+        max-width: 65%;
+   
     }
 }
