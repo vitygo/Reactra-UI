@@ -1,7 +1,7 @@
 :root{
     --black-bg: black;
     
-    --main-font-color: white;
+    --main-font-color: rgba(255, 255, 255, 0.827);
 }
 
 
@@ -74,3 +74,30 @@
     font-size: 1.5rem;
 
 }
+
+.menu__link-list{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .navbar__burger-menu, .dropdown-menu__link-list{
+        display: none;
+    }
+
+
+    .menu__link-list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        color: var(--main-font-color);
+        list-style: none;
+       
+    }
+    .link-list__link{
+        font-size: 1rem;
+
+    }
+}
+
+
