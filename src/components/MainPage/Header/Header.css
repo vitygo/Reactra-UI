@@ -7,7 +7,7 @@
     background: var( --black-bg);
     padding: 0 4%;
     position: relative;
-    z-index: 200;
+    z-index: 500;
     overflow: hidden;
 
 }
@@ -33,7 +33,7 @@
 }
 
 .navbar__dropdown-menu {
-    z-index: 200;
+    
     display: flex;
     justify-content: flex-end ;
     position: fixed;
@@ -51,12 +51,14 @@
     transition: transform 0.4s ease, opacity 0.8s ease;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+    z-index: 500;
 }
 
 .navbar__dropdown-menu.open {
     transform: translateX(0);
     opacity: 1;
     pointer-events: auto;
+    z-index: 500;
 }
 
 .dropdown-menu__link-list{
@@ -65,6 +67,8 @@
     gap: 2%;
     list-style: none;
     color: var(--main-font-color);
+    position: relative;
+    z-index: 500;
 }
 
 .link-list__link{

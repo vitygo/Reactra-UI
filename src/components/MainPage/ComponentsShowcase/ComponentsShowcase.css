@@ -43,6 +43,7 @@
     text-align: center;
     position: relative;
     z-index: 200;
+    margin-top: 6%;
 }
 
 .components-showcase-section__title span{
