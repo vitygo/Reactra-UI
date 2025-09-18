@@ -10,7 +10,7 @@ const uiComponentsСategories = [
         { id: 101, name: "Buttons", posterComponent: <PrimaryButton/>},
         { id: 102, name: "Badges / Labels / Tags", posterComponent: <DefaultBadge/>},
         { id: 103, name: "Icons" , posterComponent: 'none'},
-        { id: 104, name: "Avatars / Profile Pictures", posterComponent: 'none'},
+        { id: 104, name: "Avatars / Profile Pictures", posterComponent: <AvatarWidthText/>},
         { id: 105, name: "Images / Thumbnails", posterComponent: 'none'}
       ]
     },
@@ -154,3 +154,19 @@ export function BasicNavbar(){
 
 }
 
+export function AvatarWidthText(){
+    return(
+        <div className="avatar-width-text">
+            <img className='avatar-width-text__image' src='./prfilepic1.png' alt=''/>
+            <div className="avatar-width-text__text-container">
+                <p className="text-container__title">James McGill</p>
+                <p className="text-container__text">Python developer</p>
+
+                
+            </div>
+
+        </div>
+    );
+   
+
+}

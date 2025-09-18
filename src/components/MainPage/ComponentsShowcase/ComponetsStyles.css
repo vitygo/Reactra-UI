@@ -42,3 +42,32 @@
     align-items: center;
     gap: 3%;
 }
+
+.avatar-width-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.avatar-width-text__image{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+}
+
+.avatar-width-text__text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.text-container__title{
+    font-size: 1.2rem;
+}
+
+.text-container__text{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.736);
+}
