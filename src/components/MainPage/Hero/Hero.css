@@ -13,8 +13,22 @@
     padding: 10%;
     padding-top: 30%;
     overflow: hidden;
+    position: relative;
+  
    
 }
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 20%; 
+    right: 30%;  
+    background: radial-gradient(circle,#f3f3f3a8 35%, #1fe1c792 65%, #1dacf49a 85% );
+    width: 600px; 
+    height: 600px; 
+    filter: blur(150px);
+    z-index: 0; 
+  }
 
 
 .hero-section__hero-text{
@@ -25,6 +39,7 @@
 
 .hero-text__hero-title{
     position: relative;
+    z-index: 200;
     text-align: center;
     font-size: 2.6rem;
     margin-top: 7%;
@@ -44,6 +59,8 @@
     margin-top: 8%;
     color: rgba(255, 255, 255, 0.665);
     max-width: 80%;
+    position: relative;
+    z-index: 200;
 }
 
 .hero-text__cta-btn{
@@ -58,6 +75,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 200;
 }
 
 .hero-section__hero-img{

@@ -17,7 +17,7 @@
     position: absolute;
     top: 25%; 
     left: 10%; 
-    background: radial-gradient(circle, rgba(141, 60, 241, 0.735) 0%,  rgba(141, 60, 241, 0.278) 70%  );
+    background: radial-gradient(circle, #243949 0%,   #517fa4  70%  );
     width: 600px; 
     height: 600px; 
     filter: blur(150px);
@@ -29,7 +29,7 @@
     position: absolute;
     bottom: 0%; 
     right: 0%; 
-    background: radial-gradient(circle, rgba(141, 60, 241, 0.735) 0%,  rgba(141, 60, 241, 0.278) 70%  );
+    background: radial-gradient(circle, #243949 0%,   #517fa4  70%  );
     width: 400px; 
     height: 400px; 
     filter: blur(150px);

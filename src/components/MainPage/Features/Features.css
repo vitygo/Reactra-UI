@@ -17,15 +17,26 @@
 .features-section::after {
     content: '';
     position: absolute;
-    top: 5%; 
-    left: 80%; 
-    background: radial-gradient(circle, rgba(141, 60, 241, 0.873) 0%,  rgba(141, 60, 241, 0.337) 70%  );
-    width: 600px; 
-    height: 600px; 
+    top: 30%; 
+    left: 80%;  
+    background: radial-gradient(circle, #243949 0%,   #517fa4  70%  );
+    width: 400px; 
+    height: 400px; 
     filter: blur(150px);
     z-index: 0; 
   }
 
+  .features-section::before {
+    content: '';
+    position: absolute;
+    top: 30%; 
+    right: 80%;  
+    background: radial-gradient(circle, #243949 0%,   #517fa4  70%  );
+    width: 400px; 
+    height: 400px; 
+    filter: blur(150px);
+    z-index: 0; 
+  }
 
 
 
