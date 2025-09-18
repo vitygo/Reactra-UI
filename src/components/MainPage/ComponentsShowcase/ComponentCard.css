@@ -1,0 +1,31 @@
+.component-card{
+    height: 40vw;
+    width: 40vw;
+    background: rgba(255, 255, 255, 0.233);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.68);
+    box-shadow: rgba(255, 255, 255, 0.141) 0px 4px 12px;
+}
+
+@media (min-width:768px){
+
+    .component-card{
+        height: 27vw;
+        width: 27vw;
+        background: rgba(255, 255, 255, 0.233);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.68);
+        box-shadow: rgba(255, 255, 255, 0.141) 0px 4px 12px;
+    }
+}
+
+@media (min-width:1025px){
+    .component-card{
+        height: 21vw;
+        width: 21vw;
+        background: rgba(255, 255, 255, 0.233);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.68);
+        box-shadow: rgba(255, 255, 255, 0.141) 0px 4px 12px;
+    }
+}

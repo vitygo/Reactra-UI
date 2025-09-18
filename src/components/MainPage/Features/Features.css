@@ -1,21 +1,40 @@
 
 .features-section{
-    height: 100vh;
+    position: relative;
+    overflow:hidden;
     width: 100%;
     background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #141619;
+    background: var(--main-bg-color);
     color: var(--main-font-color);
     padding: 10% 5%;
 
 
 }
 
+.features-section::after {
+    content: '';
+    position: absolute;
+    top: 5%; 
+    left: 80%; 
+    background: radial-gradient(circle, rgba(141, 60, 241, 0.873) 0%,  rgba(141, 60, 241, 0.337) 70%  );
+    width: 600px; 
+    height: 600px; 
+    filter: blur(150px);
+    z-index: 0; 
+  }
+
+
+
+
+
 .features-section__title{
     font-size: 2.5rem;
     text-align: center;
+    position: relative;
+    z-index: 320;
 
 }
 
@@ -24,6 +43,8 @@
     max-width: 80%;
     text-align: center;
     color: rgba(255, 255, 255, 0.589);
+    position: relative;
+    z-index: 320;
 
 }
 
@@ -34,6 +55,8 @@
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     gap: 0px;
+    position: relative;
+    z-index: 320;
 }
 
 .features-grid__feature{
@@ -187,6 +210,7 @@
         max-width: 30%;
         margin-top: 1%;
     }
+
     .feature__title{
         font-size: 2.7rem;
     }

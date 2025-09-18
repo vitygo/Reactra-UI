@@ -10,12 +10,12 @@
     background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
-    
-    
     padding: 10%;
     padding-top: 30%;
+    overflow: hidden;
    
 }
+
 
 .hero-section__hero-text{
     display: flex;
