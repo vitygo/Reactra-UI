@@ -1,0 +1,16 @@
+.primary__button{
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    border-radius: 12px;
+    font-size: 1rem;
+
+
+}
+
