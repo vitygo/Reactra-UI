@@ -72,13 +72,14 @@
     width: 100%;
     padding: 6%;
     overflow: hidden;
-    height: 80vh;
+    height: 61vh;
     padding-bottom: 0px;
 
 }
 
 .components-showcase-section__components-grid.open{
     height: auto;
+
 
 
     
