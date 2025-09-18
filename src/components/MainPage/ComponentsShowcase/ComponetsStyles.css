@@ -25,10 +25,20 @@
 
 }
 
+/* basic navbar */
 .basic__navbar{
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 4% 30%;
-    background: rgba(0, 0, 0, 0.454);
+    padding: 4% 10%;
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.basic__navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3%;
 }

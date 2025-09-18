@@ -1,6 +1,6 @@
 .component-card{
     height: 40vw;
-    width: 40vw;
+    width: 100%;
     background:  #00000017;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.161);
@@ -42,8 +42,9 @@
 
     .component-card{
         height: 27vw;
-        width: 27vw;
+        width: 100%;
         border-radius: 12px;
+
         
     }
 }
