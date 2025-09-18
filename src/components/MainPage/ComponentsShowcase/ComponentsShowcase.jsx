@@ -1,6 +1,7 @@
 import './ComponentsShowcase.css'
 import './ComponentCard.css'
 import './ComponetsStyles.css'
+import { FaSearch } from "react-icons/fa";
 
 const uiComponentsСategories = [
     {
@@ -18,7 +19,7 @@ const uiComponentsСategories = [
       id: 2,
       category: "Forms & Inputs",
       subcategories: [
-        { id: 201, name: "Input Fields / Text Inputs", posterComponent: 'none'},
+        { id: 201, name: "Input Fields / Text Inputs", posterComponent: <SearchInput/>},
         { id: 202, name: "Textareas", posterComponent: 'none'},
         { id: 203, name: "Checkboxes", posterComponent: 'none'},
         { id: 204, name: "Radio Buttons", posterComponent: 'none'},
@@ -165,6 +166,17 @@ export function AvatarWidthText(){
                 
             </div>
 
+        </div>
+    );
+   
+
+}
+
+export function SearchInput(){
+    return(
+        <div className="search-input-container">
+            <input placeholder='Search React Component'/>
+            <FaSearch size="20px"/>
         </div>
     );
    
