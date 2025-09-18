@@ -51,8 +51,17 @@
 
 @media (min-width:1025px){
     .component-card{
-        height: 21vw;
+        height: 15vw;
         width: 21vw;
+        border-radius: 12px;
+        
+    }
+}
+
+@media (min-width:1700px){
+    .component-card{
+        height: 15.5vw;
+        width: 19.5vw;
         border-radius: 12px;
         
     }

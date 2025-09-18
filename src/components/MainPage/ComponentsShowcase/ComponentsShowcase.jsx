@@ -2,6 +2,7 @@ import './ComponentsShowcase.css'
 import './ComponentCard.css'
 import './ComponetsStyles.css'
 import { FaSearch } from "react-icons/fa";
+import React, {useState} from 'react'
 
 const uiComponentsСategories = [
     {
@@ -87,11 +88,14 @@ const uiComponentsСategories = [
 
 
 export default function ComponentsShowcase(){
+
+    const [isOpen, setIsOpen] = useState(false);
+
     return(
         <section className="components-showcase-section">
             <h2 className="components-showcase-section__title"><span>Explore</span> the Components</h2>
             <p className="components-showcase-section__text">Browse our library of ready-to-use React components. Click any component to see a live demo and code examples, so you can quickly integrate them into your project</p>
-            <div className="components-showcase-section__components-grid">
+            <div className={`components-showcase-section__components-grid ${isOpen ? 'open' : ''}`}>
                 {uiComponentsСategories.map(section => {
                    return section.subcategories.map(category => {
                        return <ComponentCard key={category.id} name={category.name} posterComponent={category.posterComponent}/>
@@ -101,6 +105,8 @@ export default function ComponentsShowcase(){
                 
 
             </div>
+            <button className="expand-btn" onClick={() => setIsOpen(prev => !prev)}>{`${isOpen ? 'Show less' : 'Show more'}`}</button>
+            
         </section>
     );
 }

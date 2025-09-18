@@ -10,6 +10,7 @@
     background: var(--main-bg-color);
     color: var(--main-font-color);
     padding: 10% 5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.187);
 
 
 }
