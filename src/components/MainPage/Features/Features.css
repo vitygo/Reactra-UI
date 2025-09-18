@@ -8,7 +8,7 @@
     align-items: center;
     background: #141619;
     color: var(--main-font-color);
-    padding: 3%;
+    padding: 10% 5%;
 
 
 }
@@ -85,7 +85,7 @@
   }
 
   .features-grid__feature:nth-child(3) {
-    background: linear-gradient(to right, #f3f3f3 0%, #1fe1c6 25%, #1daef4 85%);
+    background: linear-gradient(to left, #1fe1c6 25%, #1daef4 85%);
   }
 
 .feature__title{
@@ -95,5 +95,105 @@
 .feature__text{
     margin-top: 5%;
     color: rgba(255, 255, 255, 0.661);
+
+}
+
+@media (min-width: 700px){
+    .features-section__features-grid{
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0px;
+    }
+    .features-grid__feature:nth-child(2n)::after, 
+    .features-grid__feature:nth-last-child(-n+4)::before {
+        display:inline-block;
+      }
+      
+    
+      
+      .features-grid__feature:nth-last-child(-n+4)::before, 
+      .features-grid__feature:nth-last-child(5)::after, 
+      .features-grid__feature:nth-last-child(1)::after{
+        display: none;
+  
+      }
+
+
+    
+    
+}
+
+@media (min-width: 1024px){
+    .features-section__features-grid{
+        width: 90%;
+    }
+    .features-section__title{
+        font-size: 3.6rem;
+
+    }
+    .features-section__text{
+        font-size: 1.5rem;
+        text-align: center;
+        max-width: 50%;
+    }
+    .feature__title{
+        font-size: 1.7rem;
+    }
+    
+    
+    
+    .feature__text{
+        font-size: 1rem;
+    
+    }
+
+}
+
+@media (min-width: 1025px){
+    .features-section__text{
+        font-size: 1.5rem;
+        text-align: center;
+        max-width: 30%;
+    }
+    .feature__title{
+        font-size: 2rem;
+    }
+    
+    
+    
+    .feature__text{
+        font-size: 1rem;
+    
+    }
+
+
+}
+
+@media (min-width: 1700px){
+    .features-section__features-grid{
+        width: 60%;
+    }
+    .features-section__title{
+        font-size: 4.6rem;
+
+    }
+    .features-section__text{
+        font-size: 1.5rem;
+        text-align: center;
+        max-width: 30%;
+        margin-top: 1%;
+    }
+    .feature__title{
+        font-size: 2.7rem;
+    }
+    
+    
+    .feature__text{
+        font-size: 1.6rem;
+    
+    }
+
 
 }
