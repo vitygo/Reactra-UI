@@ -2,7 +2,7 @@ import './ComponentsShowcase.css'
 import './ComponentCard.css'
 import './ComponetsStyles.css'
 import { FaSearch } from "react-icons/fa";
-import React, {useState} from 'react'
+import React, {useState,  useRef} from 'react'
 
 const uiComponentsСategories = [
     {
@@ -78,7 +78,7 @@ const uiComponentsСategories = [
         { id: 602, name: "Spinners / Loaders", posterComponent: 'none'},
         { id: 603, name: "Tags / Chips", posterComponent: 'none'},
         { id: 604, name: "Dividers / Separators", posterComponent: 'none'},
-        { id: 605, name: "Footers", posterComponent: 'none'}
+        { id: 605, name: "Footers", posterComponent: <Footer/>}
       ]
     }
   ];
@@ -90,6 +90,7 @@ const uiComponentsСategories = [
 export default function ComponentsShowcase(){
 
     const [isOpen, setIsOpen] = useState(false);
+ 
 
     return(
         <section className="components-showcase-section">
@@ -195,6 +196,18 @@ export function SearchIcon({size, color}){
             <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke={color} stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
      
+    );
+   
+
+}
+
+
+export function Footer(){
+    return(
+            <footer className="footer">
+                
+
+            </footer>
     );
    
 
