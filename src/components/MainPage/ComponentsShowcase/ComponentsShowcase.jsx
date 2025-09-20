@@ -3,7 +3,8 @@ import './ComponentCard.css'
 import './ComponetsStyles.css'
 import { FaSearch } from "react-icons/fa";
 import React, {useState,  useRef} from 'react'
-
+import {Link} from 'react-router-dom'
+ 
 const uiComponentsСategories = [
     {
       id: 1,
@@ -114,6 +115,7 @@ export default function ComponentsShowcase(){
 
 export function ComponentCard({name, posterComponent}){
     return(
+        <Link to='/components'>
         <div className="component-card">
             <div className="card__header">
                 <h4>{name}</h4>
@@ -123,6 +125,7 @@ export function ComponentCard({name, posterComponent}){
             </div>
             
             </div>
+        </Link>
     )
 }
 
@@ -205,7 +208,7 @@ export function SearchIcon({size, color}){
 export function Footer(){
     return(
             <footer className="footer">
-                
+
 
             </footer>
     );

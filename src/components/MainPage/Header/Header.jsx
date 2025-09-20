@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoPartlySunny } from "react-icons/io5";
 import { IoPartlySunnyOutline } from "react-icons/io5";
 import React, {useState} from 'react'
-
+import {Link} from 'react-router-dom'
 
 export default function Header(){
 
@@ -13,7 +13,7 @@ export default function Header(){
     return(
         <header className="header">
             <div className="navbar">
-                <div className="navbar__logo"><img src="./2.png" className="logo__img" alt="logo"/></div>
+                <Link to='/'><div className="navbar__logo"><img src="./2.png" className="logo__img" alt="logo"/></div></Link>
                 <ul className='menu__link-list'>
                         <li className='link-list__link'>Documentation</li>
                         <li className='link-list__link'>Components</li>
