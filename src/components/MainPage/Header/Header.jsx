@@ -16,7 +16,7 @@ export default function Header(){
                 <Link to='/'><div className="navbar__logo"><img src="./2.png" className="logo__img" alt="logo"/></div></Link>
                 <ul className='menu__link-list'>
                         <li className='link-list__link'>Documentation</li>
-                        <li className='link-list__link'>Components</li>
+                        <Link to='/#componets-showcase'><li className='link-list__link'>Components</li></Link>
                         <li className='link-list__link'>Templates</li>
                         <li className='link-list__link'>GitHub</li>
                     </ul>

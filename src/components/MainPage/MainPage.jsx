@@ -8,7 +8,7 @@ export default function MainPage(){
         <div className="main-page">
             <Hero/>
             <Features/>
-            <ComponentsShowcase/>
+            <ComponentsShowcase id='componets-showcase'/>
         </div>
     )
 }

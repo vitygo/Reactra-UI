@@ -88,16 +88,16 @@ const uiComponentsСategories = [
 
 
 
-export default function ComponentsShowcase(){
+export default function ComponentsShowcase({id}){
 
     const [isOpen, setIsOpen] = useState(false);
  
 
     return(
-        <section className="components-showcase-section">
+        <section id={id} className="components-showcase-section">
             <h2 className="components-showcase-section__title"><span>Explore</span> the Components</h2>
             <p className="components-showcase-section__text">Browse our library of ready-to-use React components. Click any component to see a live demo and code examples, so you can quickly integrate them into your project</p>
-            <div className={`components-showcase-section__components-grid ${isOpen ? 'open' : ''}`}>
+            <div  className={`components-showcase-section__components-grid ${isOpen ? 'open' : ''}`}>
                 {uiComponentsСategories.map(section => {
                    return section.subcategories.map(category => {
                        return <ComponentCard key={category.id} name={category.name} posterComponent={category.posterComponent}/>
