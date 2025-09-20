@@ -18,16 +18,16 @@ export default function Header(){
                         <li className='link-list__link'>Documentation</li>
                         <Link to='/#componets-showcase'><li className='link-list__link'>Components</li></Link>
                         <li className='link-list__link'>Templates</li>
-                        <li className='link-list__link'>GitHub</li>
+                        <li className='link-list__link'><a href='https://github.com/vitygo/Reactra-UI' target='_blank'>GitHub</a></li>
                     </ul>
                 <GiHamburgerMenu className='navbar__burger-menu' onClick={() => setIsOpen(prev => !prev)} color="white" size='20%' />
                 </div>
                 <div className={`navbar__dropdown-menu ${isOpen ? 'open' : ''}`}>
                     <ul className='dropdown-menu__link-list'>
                         <li className='link-list__link'>Documentation</li>
-                        <li className='link-list__link'>Components</li>
+                        <Link to='/#componets-showcase' onClick={() => setIsOpen(false)}> <li className='link-list__link'>Components</li></Link>
                         <li className='link-list__link'>Templates</li>
-                        <li className='link-list__link'>GitHub</li>
+                        <li className='link-list__link' onClick={() => setIsOpen(false)}><a href='https://github.com/vitygo/Reactra-UI' target='_blank'>GitHub</a></li>
                     </ul>
                 </div>
             
