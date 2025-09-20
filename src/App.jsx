@@ -1,5 +1,6 @@
 import Header from './components/MainPage/Header/Header'
 import MainPage from './components/MainPage/MainPage'
+import Footer from './components/MainPage/Footer/Footer'
 import {Routes, Route} from 'react-router-dom'
 import ComponentsPage from './components/ComponentsPage/ComponentsPage'
 import { useLocation } from 'react-router-dom';
@@ -27,6 +28,7 @@ function App() {
         <Route path='/' element={<MainPage/>}/>
         <Route path='/components' element={<ComponentsPage/>}/>
     </Routes>
+    <Footer/>
 
     </>
   )
