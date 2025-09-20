@@ -9,9 +9,6 @@ export default function MainPage(){
             <Hero/>
             <Features/>
             <ComponentsShowcase/>
-          
-
-
         </div>
     )
 }
