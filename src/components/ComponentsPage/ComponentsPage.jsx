@@ -3,6 +3,6 @@ import './ComponentsPage.css'
 
 export default function ComponentsPage(){
     return(
-        <div className="ComponentsPage"></div>
+        <div className="components-page"></div>
     )
 }
